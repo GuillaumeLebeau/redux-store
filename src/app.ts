@@ -14,8 +14,6 @@ const store = new fromStore.Store(
   },
 );
 
-console.log(store.value);
-
 button.addEventListener(
   'click',
   () => {
@@ -25,7 +23,10 @@ button.addEventListener(
 
     const payload = { label: input.value, complete: false };
 
-    console.log(payload);
+    store.dispatch({
+      type: 'ADD_TODO',
+      payload,
+    });
 
     input.value = '';
   },
