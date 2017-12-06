@@ -7,7 +7,9 @@
     "ban-types": false,
     "no-console": [true, "debug", "info", "time", "timeEnd", "trace"],
     "quotemark": [true, "single"],
-    "object-literal-sort-keys": false
+    "object-literal-sort-keys": false,
+    "max-line-length": [true, 100],
+    "forin": false
   },
   "rulesDirectory": []
 }
